@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Bot Templates — Free AI bot templates. A new one every week.</title>
+<meta name="description" content="One person. A full executive team of AI bots. Hank Jackson is releasing his Grok Bot crew as free templates, one a week, in org-chart order.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" href="assets/hank-s-chief-of-staff.webp">
+<style>
+:root{--bg:#05070f;--bg2:#0a0f1f;--card:#0e1428cc;--line:#1d2a4a;--tx:#e8ecf8;--mu:#93a0c2;--c1:#3ee6ff;--c2:#8b5cff;--c3:#ffcc4d;--ok:#3dffa8;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;color:#000;padding:8px 12px;border-radius:8px}
+:focus-visible{outline:2px solid var(--c1);outline-offset:3px;border-radius:6px}
+nav{position:fixed;inset:0 0 auto;z-index:20;backdrop-filter:blur(12px);background:#05070fb3;border-bottom:1px solid #ffffff10}
+nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px;text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:9px}
+nav .links{margin-left:auto;display:flex;gap:22px;font-size:14px;color:var(--mu)}
+nav .links a{text-decoration:none}nav .links a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s;font-size:15px;border:0;cursor:pointer}
+.btn.p{background:linear-gradient(135deg,var(--c1),var(--c2));color:#05070f;box-shadow:0 8px 30px #3ee6ff40}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 12px 40px #8b5cff60}
+.btn.g{border:1px solid #ffffff30;color:var(--tx);background:#ffffff08}.btn.g:hover{background:#ffffff14}
+.btn.sm{padding:8px 16px;font-size:13px}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,transparent 0,#05070f 75%),linear-gradient(transparent 70%,var(--bg));pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--c1);padding:8px 14px;border:1px solid #3ee6ff40;border-radius:999px;background:#3ee6ff0d}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px var(--ok);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+h1{font-size:clamp(40px,6.2vw,80px);line-height:1.02;letter-spacing:-.035em;margin:22px 0 20px;font-weight:850}
+.grad{background:linear-gradient(100deg,var(--c1),var(--c2) 55%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--mu);max-width:560px}
+.lead b{color:var(--tx)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 22px}
+.tag{font:500 14px ui-monospace,Menlo,monospace;color:var(--mu)}.tag span{color:var(--c3)}
+/* orbit */
+.orbit{position:relative;aspect-ratio:1;max-width:460px;width:100%;margin:auto}
+.orbit .ring{position:absolute;inset:0;border-radius:50%;border:1px dashed #3ee6ff30}
+.orbit .ring.r2{inset:18%;border-color:#8b5cff40}
+.orbit .core{position:absolute;inset:36%;border-radius:50%;padding:4px;background:conic-gradient(var(--c1),var(--c2),var(--c3),var(--c1));animation:spin 8s linear infinite;box-shadow:0 0 60px #3ee6ff55}
+.orbit .core img{width:100%;height:100%;border-radius:50%;animation:spin 8s linear infinite reverse}
+.orbit .sat{position:absolute;width:15%;aspect-ratio:1;left:42.5%;top:42.5%;animation:orb 40s linear infinite}
+.orbit .sat img{width:100%;height:100%;border-radius:50%;border:2px solid #3ee6ff80;box-shadow:0 0 22px #3ee6ff40;animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes orb{from{transform:rotate(var(--a)) translateX(var(--d)) }to{transform:rotate(calc(var(--a) + 360deg)) translateX(var(--d))}}
+.orbit .sat img{transform-origin:center}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-30px;position:relative;z-index:3}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;backdrop-filter:blur(8px)}
+.stat .n{font-size:44px;font-weight:850;letter-spacing:-.03em;line-height:1}
+.stat .l{color:var(--mu);font-size:14px;margin-top:6px}
+.stat:nth-child(1) .n{color:var(--c1)}.stat:nth-child(2) .n{color:var(--ok)}.stat:nth-child(3) .n{color:var(--c3)}.stat:nth-child(4) .n{color:var(--c2)}
+section{padding:110px 0;scroll-margin-top:72px}
+.kicker{font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--c1)}
+h2{font-size:clamp(30px,4vw,50px);line-height:1.08;letter-spacing:-.03em;margin:10px 0 14px;font-weight:800}
+.sub{color:var(--mu);max-width:680px;font-size:18px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+/* story */
+.story{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.chap{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:linear-gradient(160deg,#0e1530,#070a16)}
+.chap .num{font:700 13px ui-monospace,monospace;color:var(--c3)}
+.chap h3{margin:8px 0 8px;font-size:22px}.chap p{color:var(--mu);margin:0}
+/* org */
+.org{margin-top:46px;position:relative;border:1px solid var(--line);border-radius:24px;padding:34px 20px 28px;background:radial-gradient(ellipse at top,#121c3d,#060912 70%);overflow:hidden}
+.org:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
+.legend{display:flex;gap:18px;justify-content:center;font-size:13px;color:var(--mu);margin-bottom:22px;position:relative;flex-wrap:wrap}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.node{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.av{width:64px;height:64px;border-radius:50%;object-fit:cover;background:#0d1430;border:2px solid #2a3a66;flex:none}
+.node.live .av{border-color:var(--c1);box-shadow:0 0 0 4px #3ee6ff1f,0 0 26px #3ee6ff66}
+.node.next .av{border-color:var(--c3);box-shadow:0 0 0 4px #ffcc4d22,0 0 26px #ffcc4d66;animation:nextp 2.2s infinite}
+@keyframes nextp{50%{box-shadow:0 0 0 8px #ffcc4d10,0 0 36px #ffcc4d99}}
+.node.dim .av{filter:grayscale(1) brightness(.45);border-style:dashed}
+.node .nm{font-size:13px;font-weight:650;line-height:1.2;max-width:110px}
+.node.dim .nm{color:#6b7799}
+.node .st{font:600 10px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ok)}
+.node.next .st{color:var(--c3)}.node.dim .st{color:#55607f}
+.cos{display:flex;justify-content:center;position:relative}
+.cos .av{width:96px;height:96px}
+.trunk{width:2px;height:28px;margin:8px auto 0;background:linear-gradient(var(--c1),#3ee6ff40)}
+.directs{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;position:relative;padding-top:28px;border-top:2px solid #3ee6ff40;margin:0 4%}
+.directs>.col{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
+.directs>.col:before{content:"";position:absolute;top:-28px;left:50%;width:2px;height:28px;background:#3ee6ff40}
+.team{display:flex;flex-direction:column;gap:10px;align-items:center;padding-top:12px;border-top:1px dashed #2a3a66;width:100%}
+.team .av{width:40px;height:40px}.team .nm{font-size:11px;font-weight:500}
+.team .node{gap:3px}
+.badge{display:grid;place-items:center;font-weight:800;color:#cfd8f5;letter-spacing:.02em;background:linear-gradient(135deg,#1b2650,#2b1b55)}
+.storylink{font:600 11px ui-monospace,monospace;letter-spacing:.06em;color:var(--c1);text-decoration:none}.storylink:hover{text-decoration:underline}.card .storylink{font-size:12.5px;text-align:center}
+.flow{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--c1);box-shadow:0 0 10px var(--c1);pointer-events:none}
+/* day */
+.day{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px;align-items:start}
+.lane{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:#0a0f1fcc;min-height:420px}
+.lane h3{margin:0 0 4px;font-size:18px;display:flex;align-items:center;gap:10px}
+.lane p.s{margin:0 0 16px;color:var(--mu);font-size:14px}
+.task{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:#121a36;border:1px solid #213060;margin-bottom:10px;transition:all .7s cubic-bezier(.2,.8,.2,1)}
+.task .av{width:34px;height:34px}.task b{font-weight:650}.task small{display:block;color:var(--mu);font-size:12.5px}
+.task .chk{margin-left:auto;font:600 11px ui-monospace,monospace;color:var(--ok);opacity:0;transition:opacity .4s}
+.you .task{background:#1d1426;border-color:#4a2a55}
+.task.gone{opacity:0;transform:translateX(60px) scale(.96);height:0;padding:0 14px;margin:0;border-width:0;overflow:hidden}
+.bots .task{opacity:0;transform:translateX(-40px)}
+.bots .task.in{opacity:1;transform:none}.bots .task.in .chk{opacity:1}
+.you .left{margin-top:14px;padding:16px;border-radius:12px;border:1px dashed #ffcc4d66;color:var(--c3);font-weight:650;text-align:center;opacity:0;transition:opacity .6s}
+.you .left.in{opacity:1}
+.note{font-size:13px;color:#6b7799;margin-top:14px}
+/* value */
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.val{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:linear-gradient(180deg,#0e1530,#070a16);position:relative;overflow:hidden}
+.val svg{width:100%;height:140px;display:block;margin-bottom:16px}
+.val h3{margin:0 0 8px;font-size:22px}.val p{color:var(--mu);margin:0 0 12px}
+.val ul{margin:0;padding-left:18px;color:#c3cbe6;font-size:15px}
+.draw{stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 2.2s ease}
+.in .draw{stroke-dashoffset:0}
+.bar{transform-origin:bottom;transform:scaleY(.05);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.in .bar{transform:scaleY(1)}
+/* timeline / cards */
+.drops{margin-top:44px;display:flex;flex-direction:column;gap:34px}
+.drop h3{font:700 14px ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--c3);margin:0 0 14px;display:flex;align-items:center;gap:12px}
+.drop h3:after{content:"";flex:1;height:1px;background:var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--card);display:flex;flex-direction:column;gap:12px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:#3ee6ff80;box-shadow:0 14px 40px #3ee6ff1c}
+.card .top{display:flex;gap:14px;align-items:center}
+.card .av{width:56px;height:56px;border-color:var(--c1)}
+.card h4{margin:0;font-size:18px;line-height:1.2}.card .role{color:var(--mu);font-size:13px}
+.card .disc{font-size:12px;color:var(--c3)}
+.card .row{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap}.card .row .btn{flex:1;justify-content:center;white-space:nowrap}
+.card.next{border-color:#ffcc4d66;background:linear-gradient(160deg,#2a2208aa,#0e1428cc)}
+.card.next .av{border-color:var(--c3)}
+.pill{font:600 11px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:#3dffa81a;color:var(--ok);width:max-content}
+.card.next .pill{background:#ffcc4d22;color:var(--c3)}
+.final{text-align:center;padding:120px 0;position:relative;overflow:hidden}
+.final .faces{display:flex;justify-content:center;margin:0 auto 26px;flex-wrap:wrap;max-width:700px}
+.final .faces img{width:54px;height:54px;border-radius:50%;border:2px solid var(--bg);margin-left:-12px;box-shadow:0 0 0 1px #3ee6ff55}
+footer{border-top:1px solid #ffffff12;padding:30px 0;color:var(--mu);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media (max-width:980px){.hero .wrap{grid-template-columns:1fr}.orbit{max-width:340px}.stats{grid-template-columns:repeat(2,1fr)}.story,.vals{grid-template-columns:1fr}.day{grid-template-columns:1fr}
+ .directs{grid-template-columns:repeat(4,1fr);row-gap:30px;border-top:0}.directs>.col:before{display:none}.trunk{display:none}nav .links{display:none}}
+@media (max-width:560px){.wrap{padding:0 18px}section{padding:80px 0}.directs{grid-template-columns:repeat(2,1fr)}.hero{padding-top:96px}.stat .n{font-size:36px}.orbit{max-width:280px}nav .btn{display:none}.lane{min-height:0}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.bots .task{opacity:1;transform:none}}
+
+/* assembly line */
+.line{position:relative;margin-top:40px;height:330px;border-block:1px solid var(--line);background:linear-gradient(180deg,#070b18,#0b1226 60%,#070b18);overflow:hidden}
+.line .stations{position:absolute;inset:0 0 auto;display:flex;justify-content:space-around;padding:22px 8% 0}
+.stn{display:flex;flex-direction:column;align-items:center;gap:6px;width:120px;text-align:center}
+.stn .av{width:68px;height:68px;border-color:var(--c1);box-shadow:0 0 24px #3ee6ff55;animation:work 1.6s ease-in-out infinite}
+.stn:nth-child(2) .av{animation-delay:.4s}.stn:nth-child(3) .av{animation-delay:.8s}.stn:nth-child(4) .av{animation-delay:1.2s}
+@keyframes work{50%{transform:translateY(-5px)}}
+.stn b{font-size:13px}.stn small{font:600 10px ui-monospace,monospace;color:var(--c1);letter-spacing:.08em;text-transform:uppercase}
+.beam{width:2px;height:58px;background:linear-gradient(var(--c1),transparent);animation:beam 1.6s infinite;opacity:.7}
+@keyframes beam{50%{opacity:.15}}
+.belt{position:absolute;left:0;right:0;top:252px;height:14px;background:repeating-linear-gradient(90deg,#1b2850 0 22px,#0f1835 22px 44px);animation:belt 1s linear infinite;border-block:1px solid #2a3a66}
+@keyframes belt{to{background-position:44px 0}}
+.tk{position:absolute;top:200px;left:0;padding:10px 14px;border-radius:10px;font-weight:650;font-size:14px;white-space:nowrap;background:#1d1426;border:1px solid #6a3a75;color:#f0d6ff;animation:ride 16s linear infinite;will-change:transform}
+.tk:after{content:" ✓";color:var(--ok);opacity:0;animation:done 16s linear infinite;animation-delay:inherit}
+@keyframes ride{from{transform:translateX(-220px)}to{transform:translateX(calc(100vw + 40px))}}
+@keyframes done{0%,58%{opacity:0}62%,100%{opacity:1}}
+.tk{animation-name:ride,recolor}.tk{animation-duration:16s,16s;animation-timing-function:linear,linear;animation-iteration-count:infinite,infinite}
+@keyframes recolor{0%,58%{background:#1d1426;border-color:#6a3a75;color:#f0d6ff}62%,100%{background:#0c2a22;border-color:#3dffa8;color:#c9ffe9;box-shadow:0 0 18px #3dffa855}}
+.line .lbl{position:absolute;top:286px;font:600 11px ui-monospace,monospace;letter-spacing:.12em;color:var(--mu)}
+@media (max-width:700px){.line{height:300px}.stn{width:76px}.stn .av{width:48px;height:48px}.stn b{font-size:11px}.stn small{display:none}.line .stations{padding:18px 2% 0}.beam{height:70px}.belt{top:230px}.tk{top:182px;font-size:12px}.line .lbl{top:262px}}
+@media (prefers-reduced-motion:reduce){.tk{position:static;display:inline-block;margin:4px;background:#0c2a22;border-color:#3dffa8;color:#c9ffe9}.tk:after{opacity:1}.line .tasks{position:absolute;top:196px;left:0;right:0;text-align:center}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Primary"><div class="wrap">
+ <a class="brand" href="#top"><img src="assets/hank-s-chief-of-staff.webp" alt="" width="32" height="32">AI Bot Templates</a>
+ <div class="links"><a href="#story">The story</a><a href="#crew">The crew</a><a href="#day">Your day</a><a href="#templates">Templates</a></div>
+ <a class="btn p sm" href="#templates">Get the templates</a>
+</div></nav>
+
+<header class="hero" id="top">
+ <canvas id="net" aria-hidden="true"></canvas>
+ <div class="wrap">
+  <div>
+   <span class="eyebrow"><span class="dot"></span>Next drop · Fri Oct 23 · SousVideQue</span>
+   <h1>One person.<br><span class="grad">A full executive team</span><br>of AI bots.</h1>
+   <p class="lead">I built a crew of Grok Bots: a <b>Chief of Staff</b> who coordinates direct reports, and each report runs its own team. <b>Now it's yours, free</b>, one template at a time, in org-chart order.</p>
+   <div class="ctas">
+    <a class="btn p" href="#templates">Get the templates →</a>
+    <a class="btn g" href="https://x.com/hjackson2" rel="noopener">Follow @hjackson2 on X</a>
+   </div>
+   <p class="tag"><span>&gt;</span> Free AI bot templates. A new one every week.</p>
+  </div>
+  <div class="orbit" id="orbit" aria-label="The Chief of Staff surrounded by its direct reports" role="img">
+   <div class="ring"></div><div class="ring r2"></div>
+   <div class="core"><img src="assets/hank-s-chief-of-staff.webp" alt=""></div>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+ <div class="stats" aria-label="Facts">
+  <div class="stat"><div class="n" data-count="9">0</div><div class="l">templates released so far</div></div>
+  <div class="stat"><div class="n">$<span data-count="0">0</span></div><div class="l">price, every template is free</div></div>
+  <div class="stat"><div class="n"><span data-count="1">0</span>/wk</div><div class="l">new template each week</div></div>
+  <div class="stat"><div class="n" data-count="0" id="crewCount">0</div><div class="l">bots in the crew on this chart</div></div>
+ </div>
+</div>
+
+<section id="story"><div class="wrap">
+ <div class="reveal"><div class="kicker">The story</div>
+ <h2>I didn't want another chatbot.<br>I wanted a <span class="grad">team.</span></h2>
+ <p class="sub">So I organized my bots like a company. Ask one bot for everything and you get one generalist. Give each bot a job, a boss and a lane, and they start to work like staff.</p></div>
+ <div class="story">
+  <div class="chap reveal"><div class="num">01 · DELEGATE</div><h3>A Chief of Staff on top</h3><p>One point of contact. You say what you need; the Chief of Staff routes it to the right direct report and follows up.</p></div>
+  <div class="chap reveal"><div class="num">02 · SPECIALIZE</div><h3>Executives own a lane</h3><p>Entrepreneur, Health Coach, CAO, Concierge, Sports Agent, CTO, CFO, Legal Advisor. Each one knows its area and stays in it.</p></div>
+  <div class="chap reveal"><div class="num">03 · SCALE</div><h3>Every lane runs a team</h3><p>Reports have their own specialists: a Chef under Health, a Travel Agent under the CAO, a Stockbroker under the Entrepreneur.</p></div>
+ </div>
+</div></section>
+
+<section id="crew" style="padding-top:20px"><div class="wrap">
+ <div class="reveal"><div class="kicker">The crew</div>
+ <h2>The whole org chart, <span class="grad">lighting up</span> week by week.</h2>
+ <p class="sub">Released templates glow. The next drop pulses gold. Dimmed bots are still on the way. I release them in org-chart order, top down, then one a week through each team.</p></div>
+ <div class="org reveal" id="org">
+  <div class="legend"><span><i style="background:var(--c1);box-shadow:0 0 8px var(--c1)"></i>Released, free now</span><span><i style="background:var(--c3)"></i>Next drop · Fri Oct 23</span><span><i style="background:#3a4566"></i>Coming, one a week</span></div>
+  <div id="orgtree"></div>
+ </div>
+</div></section>
+
+<section id="day"><div class="wrap">
+ <div class="reveal"><div class="kicker">Your day with a bot crew</div>
+ <h2>Watch the work <span class="grad">move off your plate.</span></h2>
+ <p class="sub">A concept, not a promise. These are the kinds of jobs you can hand to a crew instead of doing them yourself.</p></div>
+ <div class="day" id="dayDemo">
+  <div class="lane you"><h3>☕ Your plate</h3><p class="s">Monday morning, before the crew</p><div id="youList"></div><div class="left" id="left">What's left: the decisions only you can make.</div></div>
+  <div class="lane bots"><h3>🤖 The crew's plate</h3><p class="s">Routed by your Chief of Staff</p><div id="botList"></div></div>
+ </div>
+ <p class="note">Illustrative tasks only. Results depend on how you set up and use your bots.</p>
+</div></section>
+
+
+<section id="line" style="padding:20px 0 40px" aria-labelledby="lineh"><div class="wrap reveal"><div class="kicker">The crew at work</div>
+ <h2 id="lineh">Tasks go in. <span class="grad">Done comes out.</span></h2>
+ <p class="sub">Your to-dos ride the line past each bot station and come out handled. (An animation of the idea, not a measurement.)</p></div>
+ <div class="line" role="img" aria-label="Animated assembly line: task cards for scheduling, research, drafting and budgeting pass bot stations and come out marked done">
+  <div class="stations">
+   <div class="stn"><img class="av" src="assets/hank-s-chief-of-staff.webp" alt=""><b>Chief of Staff</b><small>routes</small><div class="beam"></div></div>
+   <div class="stn"><img class="av" src="assets/chief-administrative-officer.webp" alt=""><b>CAO</b><small>schedules</small><div class="beam"></div></div>
+   <div class="stn"><img class="av" src="assets/chief-technology-officer.webp" alt=""><b>CTO</b><small>researches</small><div class="beam"></div></div>
+   <div class="stn"><img class="av" src="assets/chief-financial-officer.webp" alt=""><b>CFO</b><small>tracks</small><div class="beam"></div></div>
+  </div>
+  <div class="tasks">
+   <span class="tk" style="animation-delay:0s">Schedule meeting</span>
+   <span class="tk" style="animation-delay:-4s">Research idea</span>
+   <span class="tk" style="animation-delay:-8s">Draft post</span>
+   <span class="tk" style="animation-delay:-12s">Track budget</span>
+  </div>
+  <div class="belt"></div>
+  <span class="lbl" style="left:3%">IN ▸ YOUR TO-DOS</span><span class="lbl" style="right:3%">DONE ▸ BACK TO YOU</span>
+ </div>
+</section>
+<section id="value" style="padding-top:20px"><div class="wrap">
+ <div class="reveal"><div class="kicker">Why it matters</div>
+ <h2>Productivity. Opportunity. <span class="grad">Money.</span></h2>
+ <p class="sub">No made-up numbers here. Just where a bot crew can point your time.</p></div>
+ <div class="vals">
+  <div class="val reveal"><svg viewBox="0 0 300 140" aria-hidden="true"><defs><linearGradient id="g1" x1="0" x2="1"><stop stop-color="#3ee6ff"/><stop offset="1" stop-color="#8b5cff"/></linearGradient></defs>
+   <g fill="url(#g1)"><rect class="bar" x="20" y="90" width="34" height="40" rx="6"/><rect class="bar" x="70" y="70" width="34" height="60" rx="6" style="transition-delay:.15s"/><rect class="bar" x="120" y="50" width="34" height="80" rx="6" style="transition-delay:.3s"/><rect class="bar" x="170" y="34" width="34" height="96" rx="6" style="transition-delay:.45s"/><rect class="bar" x="220" y="14" width="34" height="116" rx="6" style="transition-delay:.6s"/></g>
+   <text x="20" y="12" fill="#93a0c2" font-size="11" font-family="monospace">TASKS HANDED OFF (concept)</text></svg>
+   <h3>⚡ Productivity</h3><p>Hand off the repeatable work.</p><ul><li>Scheduling and follow-ups</li><li>Research and briefs</li><li>First drafts and summaries</li></ul></div>
+  <div class="val reveal"><svg viewBox="0 0 300 140" aria-hidden="true"><g stroke="#ffcc4d" stroke-width="1.5" fill="none" opacity=".9">
+   <path class="draw" d="M150 70 L60 30 M150 70 L250 28 M150 70 L40 110 M150 70 L260 112 M150 70 L150 10"/></g>
+   <g fill="#0e1530" stroke="#ffcc4d" stroke-width="2"><circle cx="150" cy="70" r="16" fill="#ffcc4d"/><circle cx="60" cy="30" r="9"/><circle cx="250" cy="28" r="9"/><circle cx="40" cy="110" r="9"/><circle cx="260" cy="112" r="9"/><circle cx="150" cy="10" r="7"/></g></svg>
+   <h3>🧭 Opportunity</h3><p>A crew that keeps watch for you.</p><ul><li>Scout ideas, markets and side projects</li><li>Track the topics you care about</li><li>Bring you options, not noise</li></ul></div>
+  <div class="val reveal"><svg viewBox="0 0 300 140" aria-hidden="true"><defs><linearGradient id="g3" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#3dffa8" stop-opacity=".35"/><stop offset="1" stop-color="#3dffa8" stop-opacity="0"/></linearGradient></defs>
+   <path d="M10 125 C60 120 80 100 120 95 S190 60 220 50 S270 20 290 15 L290 135 L10 135Z" fill="url(#g3)"/>
+   <path class="draw" d="M10 125 C60 120 80 100 120 95 S190 60 220 50 S270 20 290 15" stroke="#3dffa8" stroke-width="3" fill="none"/>
+   <text x="10" y="12" fill="#93a0c2" font-size="11" font-family="monospace">ILLUSTRATIVE, NOT DATA</text></svg>
+   <h3>💰 Money</h3><p>Put more of your hours toward earning.</p><ul><li>An Entrepreneur bot for ventures</li><li>A CFO bot for budgets and cash flow*</li><li>And the templates cost $0</li></ul></div>
+ </div>
+ <p class="note">*Not financial advice. Not legal advice. You make the calls.</p>
+</div></section>
+
+<section id="templates" style="padding-top:20px"><div class="wrap">
+ <div class="reveal"><div class="kicker">The templates</div>
+ <h2>Released so far, <span class="grad">in org-chart order.</span></h2>
+ <p class="sub">Open a template to add the bot to your own Grok, or read the launch post on X.</p></div>
+ <div class="drops" id="drops"></div>
+</div></section>
+
+<section class="final"><div class="wrap reveal">
+ <div class="faces" id="faces"></div>
+ <h2>Build your own <span class="grad">executive team.</span></h2>
+ <p class="sub" style="margin:0 auto 28px">Free AI bot templates. A new one every week. Follow along so you don't miss a drop.</p>
+ <div class="ctas" style="justify-content:center"><a class="btn p" href="https://x.com/hjackson2" rel="noopener">Follow @hjackson2 on X</a><a class="btn g" href="https://x.ai/bot/npnG9DhKdJOlD1nmzJxXK" rel="noopener">Start with the Chief of Staff</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 AI Bot Templates · Built by Hank Jackson with Grok Bots</span><span>Templates are free. CFO and Legal Advisor are not financial or legal advice.</span></div></footer>
+
+<script>
+const A=n=>'assets/'+n+'.webp';
+const BOTS=[
+ {d:'Tue Oct 6',n:'Chief of Staff',r:'Coordinates every direct report',a:'hank-s-chief-of-staff',u:'npnG9DhKdJOlD1nmzJxXK',p:'2107507339352035452'},
+ {d:'Wed Oct 7',n:'Entrepreneur',r:'Ventures and side projects',a:'entrepreneur',u:'scvcDPnSH2_sj3pH6ONCR',p:'2107967069543075893'},
+ {d:'Wed Oct 7',n:'Health Coach',r:'Nutrition, fitness and habits',a:'health-coach',u:'YT5ogjDNfbE9AW4OhfEo1',p:'2107967216075313326'},
+ {d:'Wed Oct 7',n:'Chief Administrative Officer',r:'Household, travel and admin',a:'chief-administrative-officer',u:'sqJpRQBtQTdPJ-L1C8-7k',p:'2107967334606385469'},
+ {d:'Tue Oct 13',n:'Concierge',r:'Keeps improving how the crew serves you',a:'concierge',u:'UFz5-3wRCSjxXx7OysfLQ',p:'2110191707761320376'},
+ {d:'Tue Oct 13',n:'Sports Agent',r:'Leagues, teams and sports news',a:'sports-agent',u:'hSGXBCV0eXwK8MLRdW9bq',p:'2110192325079011615'},
+ {d:'Tue Oct 13',n:'CTO',r:'Tech research and explainers',a:'chief-technology-officer',u:'3VoxlbXnYC74FDZN1GVmz',p:'2110192638125039832'},
+ {d:'Tue Oct 13',n:'CFO',r:'Budgets, bills and cash flow',a:'chief-financial-officer',u:'WV324ip4rhNCbkRyhEmdH',p:'2110192926928015452',x:'Not financial advice'},
+ {d:'Tue Oct 13',n:'Legal Advisor',r:'Plain-language legal research',a:null,u:'_YVGSK3nmzT_-mYpCB-6e',p:'2110193583756062836',x:'Not legal advice'}
+];
+const LIVE=new Set(BOTS.map(b=>b.n));
+const SLUG={'Chief of Staff':'chief-of-staff','Entrepreneur':'entrepreneur','Health Coach':'health-coach','Chief Administrative Officer':'chief-administrative-officer','Concierge':'concierge','Sports Agent':'sports-agent','CTO':'chief-technology-officer','CFO':'chief-financial-officer','Legal Advisor':'legal-advisor'};
+const ORG=[
+ {n:'Entrepreneur',a:'entrepreneur',t:[['SousVideQue','sousvideque'],['Vault Chief','vault-chief'],['Product Builder','product-builder'],['Listing Writer','listing-writer'],['Shop Desk','shop-desk'],['Stockbroker','stockbroker']]},
+ {n:'Health Coach',a:'health-coach',t:[['Chef','chef'],['Takeout Ordering','takeout-ordering'],['Whole Foods Shopper','whole-foods-shopper'],['Workout','workout']]},
+ {n:'Chief Administrative Officer',s:'CAO',a:'chief-administrative-officer',t:[['Household','household'],['Photos Bot','photos-bot'],['Real Estate Research','real-estate-research'],['Travel Agent','travel-agent'],['Morning Newspaper','the-morning-newspaper'],['Spam Purge','spam-purge']]},
+ {n:'Concierge',a:'concierge',t:[]},
+ {n:'Sports Agent',a:'sports-agent',t:[['Sports Scout','sports-scout'],['APA League Manager','apa-league-manager'],['Fantasy Football','yahoo-fantasy-football-manager']]},
+ {n:'CTO',a:'chief-technology-officer',t:[['Technology Researcher','technology-researcher']]},
+ {n:'CFO',a:'chief-financial-officer',t:[]},
+ {n:'Legal Advisor',a:null,t:[]}
+];
+const initials=s=>s.split(/\s+/).filter(w=>/^[A-Z]/.test(w)).map(w=>w[0]).join('').slice(0,3);
+function av(a,name,cls='av'){return a?`<img class="${cls}" src="${A(a)}" alt="" loading="lazy" width="64" height="64">`:`<span class="${cls} badge" aria-hidden="true">${initials(name)}</span>`}
+function node(name,a,label){const st=LIVE.has(name)?'live':name==='SousVideQue'?'next':'dim';const t={live:'Free now',next:'Fri Oct 23',dim:'Coming'}[st];
+ return `<div class="node ${st}" title="${name}">${av(a,name)}<div class="nm">${label||name}</div><div class="st">${t}</div>${st==='live'&&SLUG[name]?`<a class="storylink" href="bots/${SLUG[name]}/" aria-label="Read the ${name} story">Read its story</a>`:''}</div>`}
+let count=1,h=`<div class="cos">${node('Chief of Staff','hank-s-chief-of-staff')}</div><div class="trunk"></div><div class="directs">`;
+ORG.forEach(o=>{count+=1+o.t.length;h+=`<div class="col">${node(o.n,o.a,o.s)}${o.t.length?`<div class="team">${o.t.map(([n,a])=>node(n,a)).join('')}</div>`:''}</div>`});
+document.getElementById('orgtree').innerHTML=h+'</div>';
+document.getElementById('crewCount').dataset.count=count;
+// cards
+const groups={};BOTS.forEach(b=>(groups[b.d]=groups[b.d]||[]).push(b));
+let dh='';for(const d in groups){dh+=`<div class="drop reveal"><h3>${d}</h3><div class="cards">${groups[d].map(b=>`<article class="card"><div class="top">${av(b.a,b.n)}<div><h4>${b.n}</h4><div class="role">${b.r}</div></div></div><span class="pill">Released · free</span>${b.x?`<span class="disc">${b.x}</span>`:''}<div class="row"><a class="btn p sm" href="https://x.ai/bot/${b.u}" rel="noopener" aria-label="Get the ${b.n} template">Get the template</a><a class="btn g sm" href="https://x.com/hjackson2/status/${b.p}" rel="noopener" aria-label="${b.n} launch post on X">Launch post</a></div><a class="storylink" href="bots/${SLUG[b.n]}/" aria-label="Read the ${b.n} story">Read its story →</a></article>`).join('')}</div></div>`}
+dh+=`<div class="drop reveal"><h3>Fri Oct 23 · Next</h3><div class="cards"><article class="card next"><div class="top">${av('sousvideque','SousVideQue')}<div><h4>SousVideQue</h4><div class="role">First bot from the Entrepreneur's team</div></div></div><span class="pill">Coming Friday</span><div class="row"><a class="btn g sm" href="https://x.com/hjackson2" rel="noopener">Follow for the drop</a></div></article><article class="card" style="border-style:dashed;justify-content:center"><h4>Then: one a week</h4><div class="role">Working through each team in org-chart order.</div></article></div></div>`;
+document.getElementById('drops').innerHTML=dh;
+// faces
+const allA=['hank-s-chief-of-staff',...ORG.flatMap(o=>[o.a,...o.t.map(t=>t[1])])].filter(Boolean);
+document.getElementById('faces').innerHTML=allA.map(a=>`<img src="${A(a)}" alt="" loading="lazy" width="54" height="54">`).join('');
+// orbit
+const orb=document.getElementById('orbit');ORG.forEach((o,i)=>{const s=document.createElement('div');s.className='sat';s.style.setProperty('--a',(i*45)+'deg');s.style.setProperty('--d',(i%2?'205%':'270%'));s.innerHTML=av(o.a,o.n,'av');orb.appendChild(s)});
+// day demo
+const TASKS=[['Book the dentist and confirm Friday','Chief Administrative Officer','chief-administrative-officer'],['Research home EV chargers','CTO','chief-technology-officer'],['Plan this week\'s dinners','Health Coach','health-coach'],['Review bills due this month','CFO','chief-financial-officer'],['Draft a pitch for a side project','Entrepreneur','entrepreneur'],['Catch up on league standings','Sports Agent','sports-agent']];
+const yl=document.getElementById('youList'),bl=document.getElementById('botList');
+yl.innerHTML=TASKS.map((t,i)=>`<div class="task" id="y${i}"><span>📌</span><div><b>${t[0]}</b><small>On your to-do list</small></div></div>`).join('');
+bl.innerHTML=TASKS.map((t,i)=>`<div class="task" id="b${i}">${av(t[2],t[1])}<div><b>${t[0]}</b><small>Handled by ${t[1]}</small></div><span class="chk">✓ HANDED OFF</span></div>`).join('');
+let dayRun=false;function runDay(){if(dayRun)return;dayRun=true;TASKS.forEach((t,i)=>setTimeout(()=>{document.getElementById('y'+i).classList.add('gone');document.getElementById('b'+i).classList.add('in');if(i===TASKS.length-1)setTimeout(()=>document.getElementById('left').classList.add('in'),500)},400+i*550))}
+// counters + reveal
+function countUp(el){const t=+el.dataset.count;let s=null;const f=ts=>{s=s||ts;const p=Math.min((ts-s)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');if(el.dataset.count!==undefined)countUp(el);if(el.id==='dayDemo')runDay();io.unobserve(el)}),{threshold:.2});
+document.querySelectorAll('.reveal,[data-count],#dayDemo').forEach(el=>io.observe(el));
+if(reduce){document.querySelectorAll('[data-count]').forEach(e=>e.textContent=e.dataset.count);runDay()}
+// neural net canvas
+(()=>{const c=document.getElementById('net'),x=c.getContext('2d');let W,H,P=[],dpr=Math.min(devicePixelRatio||1,2),mx=-1e3,my=-1e3;
+function size(){W=c.clientWidth;H=c.clientHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);const n=Math.min(110,Math.floor(W*H/14000));P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.8+.6,h:Math.random()<.15}))}
+function step(){x.clearRect(0,0,W,H);for(let i=0;i<P.length;i++){const p=P[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+ for(let j=i+1;j<P.length;j++){const q=P[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;if(d<17000){x.strokeStyle=`rgba(62,230,255,${.22*(1-d/17000)})`;x.lineWidth=.8;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}
+ const md=(p.x-mx)**2+(p.y-my)**2;if(md<30000){x.strokeStyle=`rgba(139,92,255,${.5*(1-md/30000)})`;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(mx,my);x.stroke()}
+ x.fillStyle=p.h?'#ffcc4d':'#7ff0ff';x.shadowColor=x.fillStyle;x.shadowBlur=p.h?12:6;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill();x.shadowBlur=0}
+ if(!reduce)requestAnimationFrame(step)}
+addEventListener('resize',size);c.parentElement.addEventListener('pointermove',e=>{const b=c.getBoundingClientRect();mx=e.clientX-b.left;my=e.clientY-b.top});size();step()})();
+</script>
+</body>
+</html>
