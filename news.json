@@ -1,0 +1,121 @@
+{
+ "topic": "AI bot news",
+ "generated_at": "2026-10-22T23:55:04+00:00",
+ "sources": [
+  "Hugging Face Blog",
+  "LangChain Blog",
+  "Simon Willison",
+  "OpenAI News",
+  "Google AI Blog",
+  "Google DeepMind",
+  "Zapier Blog",
+  "Ben's Bites",
+  "The Rundown AI",
+  "Latent Space",
+  "Hacker News (AI agents)",
+  "YouTube Data API v3"
+ ],
+ "ai_check": {
+  "model": "grok-4.20-0309-non-reasoning",
+  "min_score": 7
+ },
+ "note": "Auto-curated links to public posts (keyword prefilter + AI relevance check, no human review). Each item credits and links to its source.",
+ "items": [
+  {
+   "title": "Claims Adjusters: AI Agents for your Claims Research",
+   "source": "YouTube · Templates Grokbot",
+   "url": "https://www.youtube.com/watch?v=u4P8tPhlmu0",
+   "date": "2026-10-22T23:00:19+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/u4P8tPhlmu0/mqdefault.jpg",
+   "ai_score": 9
+  },
+  {
+   "title": "Claude’s personal agent",
+   "source": "Ben's Bites",
+   "url": "https://www.bensbites.com/p/claudes-personal-agent",
+   "date": "2026-10-22T13:01:21+00:00",
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!VCXD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2112586659976105984.jpg",
+   "ai_score": 7
+  },
+  {
+   "title": "How a recruiting agency uses Claude and Zapier MCP to find the candidates who aren't looking",
+   "source": "Zapier Blog",
+   "url": "https://zapier.com/blog/blue-castle-agency-zapier-mcp",
+   "date": "2026-10-22T13:00:00+00:00",
+   "thumbnail": null,
+   "ai_score": 8
+  },
+  {
+   "title": "Use one Zapier MCP server across all your AI tools",
+   "source": "Zapier Blog",
+   "url": "https://zapier.com/blog/connect-multiple-ai-clients-zapier-mcp",
+   "date": "2026-10-20T00:00:00+00:00",
+   "thumbnail": null,
+   "ai_score": 8
+  },
+  {
+   "title": "The Most Common Questions About Agent Evals, Answered",
+   "source": "LangChain Blog",
+   "url": "https://www.langchain.com/blog/common-questions-about-agent-evals",
+   "date": "2026-10-15T09:18:55+00:00",
+   "thumbnail": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac98333d970ebc162805c63_agent-evals-faq-cover-1200x675.png",
+   "ai_score": 7
+  },
+  {
+   "title": "Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context",
+   "source": "LangChain Blog",
+   "url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+   "date": "2026-10-15T09:18:55+00:00",
+   "thumbnail": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac6d12e05f73fc9690266a8_dark-74%20characters%20max.png",
+   "ai_score": 8
+  },
+  {
+   "title": "OpenAI finds a bug in its boardroom",
+   "source": "The Rundown AI",
+   "url": "https://www.therundown.ai/articles/openai-finds-a-bug-in-its-boardroom",
+   "date": "2026-10-14T09:00:00+00:00",
+   "thumbnail": null,
+   "ai_score": 7
+  },
+  {
+   "title": "Human-in-the-loop in AI workflows: HITL meaning, benefits, and practical patterns",
+   "source": "Zapier Blog",
+   "url": "https://zapier.com/blog/human-in-the-loop",
+   "date": "2026-10-14T05:00:00+00:00",
+   "thumbnail": null,
+   "ai_score": 8
+  },
+  {
+   "title": "Which AI models can you automate on Zapier? (OpenAI, Anthropic, Google, Moonshot AI, Z.ai, and more)",
+   "source": "Zapier Blog",
+   "url": "https://zapier.com/blog/ai-models-on-zapier",
+   "date": "2026-10-14T05:00:00+00:00",
+   "thumbnail": null,
+   "ai_score": 7
+  },
+  {
+   "title": "Deep Agents Deploy: an open alternative to Claude Managed Agents",
+   "source": "LangChain Blog",
+   "url": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents",
+   "date": "2026-10-13T19:56:07+00:00",
+   "thumbnail": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/69dce8678d86f0b97b4bfb03_69755ea1ee1a0520c04789deb8a34ccc.png",
+   "ai_score": 7
+  },
+  {
+   "title": "How Snyk Turned an Internal Support Agent into a Customer Feature",
+   "source": "LangChain Blog",
+   "url": "https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature",
+   "date": "2026-10-09T10:29:19+00:00",
+   "thumbnail": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac7d36b945be0a5d53cf3b4_Snyk%20blog%20thumbnail.png",
+   "ai_score": 7
+  },
+  {
+   "title": "Agents that can pay: building Restock with Stripe's Link and Managed Deep Agents",
+   "source": "LangChain Blog",
+   "url": "https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link",
+   "date": "2026-10-08T17:37:00+00:00",
+   "thumbnail": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac718f4c65195ca032e3790_restock-cover.png",
+   "ai_score": 8
+  }
+ ]
+}
