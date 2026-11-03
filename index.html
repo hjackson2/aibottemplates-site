@@ -315,17 +315,18 @@ const BOTS=[
  {d:'Tue Oct 13',n:'Legal Advisor',r:'Plain-language legal research',a:null,u:'_YVGSK3nmzT_-mYpCB-6e',p:'2110193583756062836',x:'Not legal advice'},
  {d:'Tue Oct 27',n:'APA League Manager',r:'APA 8-ball league coach',a:'apa-league-manager',u:'WkF4p8ua77SFiFGUlmeST',p:'2115114176121037177'},
  {d:'Tue Oct 27',n:'Side Hustle Builder',r:'Turns one idea into a running side venture',a:null,u:'V-ddYBdTCYNFbaEEZEFh5',p:'2114708880504524914',x:'Not financial advice'},
- {d:'Tue Oct 27',n:'Fantasy Football Manager',r:'Runs your weekly fantasy routine',a:null,u:'uoiE_88vRqI87wjEMg4Gh',p:'2115148347241816467'}
+ {d:'Tue Oct 27',n:'Fantasy Football Manager',r:'Runs your weekly fantasy routine',a:null,u:'uoiE_88vRqI87wjEMg4Gh',p:'2115148347241816467'},
+ {d:'Tue Nov 3',n:'Family App Builder',r:'Build your family\'s own chores app, privately',a:null,tu:'https://x.ai/bot/scvcDPnSH2_sj3pH6ONCR',xu:'https://x.com/hjackson2/status/2117626452602466516',x:'Not legal advice'}
 ];
 const LIVE=new Set(BOTS.map(b=>b.n));
-const SLUG={'Chief of Staff':'chief-of-staff','Entrepreneur':'entrepreneur','Health Coach':'health-coach','Chief Administrative Officer':'chief-administrative-officer','Concierge':'concierge','Sports Agent':'sports-agent','CTO':'chief-technology-officer','CFO':'chief-financial-officer','Legal Advisor':'legal-advisor','APA League Manager':'apa-league-manager','Side Hustle Builder':'side-hustle-builder','Fantasy Football Manager':'fantasy-football-manager'};
+const SLUG={'Chief of Staff':'chief-of-staff','Entrepreneur':'entrepreneur','Health Coach':'health-coach','Chief Administrative Officer':'chief-administrative-officer','Concierge':'concierge','Sports Agent':'sports-agent','CTO':'chief-technology-officer','CFO':'chief-financial-officer','Legal Advisor':'legal-advisor','APA League Manager':'apa-league-manager','Side Hustle Builder':'side-hustle-builder','Fantasy Football Manager':'fantasy-football-manager','Family App Builder':'family-app-builder'};
 const ORG=[
  {n:'Entrepreneur',a:'entrepreneur',t:[['Side Hustle Builder',null],['Stockbroker','stockbroker']]},
  {n:'Health Coach',a:'health-coach',t:[['Chef','chef'],['Takeout Ordering','takeout-ordering'],['Whole Foods Shopper','whole-foods-shopper'],['Workout','workout']]},
  {n:'Chief Administrative Officer',s:'CAO',a:'chief-administrative-officer',t:[['Household','household'],['Photos Bot','photos-bot'],['Real Estate Research','real-estate-research'],['Travel Agent','travel-agent'],['Morning Newspaper','the-morning-newspaper'],['Spam Purge','spam-purge']]},
  {n:'Concierge',a:'concierge',t:[]},
  {n:'Sports Agent',a:'sports-agent',t:[['Sports Scout','sports-scout'],['APA League Manager','apa-league-manager'],['Fantasy Football Manager',null]]},
- {n:'CTO',a:'chief-technology-officer',t:[['Technology Researcher','technology-researcher']]},
+ {n:'CTO',a:'chief-technology-officer',t:[['Technology Researcher','technology-researcher'],['Family App Builder',null]]},
  {n:'CFO',a:'chief-financial-officer',t:[]},
  {n:'Legal Advisor',a:null,t:[]}
 ];
@@ -339,7 +340,7 @@ document.getElementById('orgtree').innerHTML=h+'</div>';
 document.getElementById('crewCount').dataset.count=count;
 // cards
 const groups={};BOTS.forEach(b=>(groups[b.d]=groups[b.d]||[]).push(b));
-let dh='';for(const d in groups){dh+=`<div class="drop reveal"><h3>${d}</h3><div class="cards">${groups[d].map(b=>`<article class="card"><div class="top">${av(b.a,b.n)}<div><h4>${b.n}</h4><div class="role">${b.r}</div></div></div><span class="pill">Released · free</span>${b.x?`<span class="disc">${b.x}</span>`:''}<div class="row"><a class="btn p sm" href="https://x.ai/bot/${b.u}" rel="noopener" aria-label="Get the ${b.n} template">Get the template</a><a class="btn g sm" href="https://x.com/hjackson2/status/${b.p}" rel="noopener" aria-label="${b.n} X launch post">X launch post</a></div><a class="storylink" href="bots/${SLUG[b.n]}/" aria-label="Read the ${b.n} story">Read its story →</a></article>`).join('')}</div></div>`}
+let dh='';for(const d in groups){dh+=`<div class="drop reveal"><h3>${d}</h3><div class="cards">${groups[d].map(b=>`<article class="card"><div class="top">${av(b.a,b.n)}<div><h4>${b.n}</h4><div class="role">${b.r}</div></div></div><span class="pill">Released · free</span>${b.x?`<span class="disc">${b.x}</span>`:''}<div class="row"><a class="btn p sm" href="${b.tu||'https://x.ai/bot/'+b.u}" rel="noopener" aria-label="Get the ${b.n} template">Get the template</a><a class="btn g sm" href="${b.xu||'https://x.com/hjackson2/status/'+b.p}" rel="noopener" aria-label="${b.n} X launch post">X launch post</a></div><a class="storylink" href="bots/${SLUG[b.n]}/" aria-label="Read the ${b.n} story">Read its story →</a></article>`).join('')}</div></div>`}
 dh+=`<div class="drop reveal"><h3>Next · every Tuesday</h3><div class="cards"><article class="card" style="border-style:dashed;justify-content:center"><h4>New bot every Tuesday.</h4><div class="role">Working through each team in org-chart order.</div><div class="row"><a class="btn g sm" href="https://x.com/hjackson2" rel="noopener">Follow on X for the drop</a></div></article></div></div>`;
 document.getElementById('drops').innerHTML=dh;
 // faces
